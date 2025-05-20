@@ -1,0 +1,282 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f9fa;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(90deg, #e53935 0%, #ffb300 100%);
+    border-bottom: none;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(229,57,53,0.08);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+}
+nav .logo {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(229,57,53,0.10);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    background: rgba(255,255,255,0.10);
+    border-radius: 20px;
+    padding: 0.4em 1.1em;
+    border: 1px solid rgba(255,255,255,0.18);
+    transition: background 0.2s, color 0.2s;
+}
+nav ul li a:hover, nav ul li a:focus {
+    background: #fff;
+    color: #e53935;
+}
+main {
+    max-width: 900px;
+    margin: 2em auto 2em auto;
+    padding: 0 1em;
+    flex: 1 0 auto;
+}
+.hero, section, .blog-post {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(229,57,53,0.07);
+    margin-bottom: 2em;
+    padding: 2em 2em 1.5em 2em;
+    position: relative;
+}
+.hero {
+    text-align: center;
+    margin-bottom: 2em;
+    border-top: 6px solid #e53935;
+}
+.hero h1 {
+    color: #e53935;
+    font-size: 2.3em;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+.hero p {
+    font-size: 1.15em;
+    margin-bottom: 1.5em;
+}
+.main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(229,57,53,0.10);
+    margin: 1em 0;
+}
+h1 {
+    color: #e53935;
+    font-size: 2em;
+    margin-bottom: 0.4em;
+    border-left: 8px solid #e53935;
+    padding-left: 0.5em;
+    background: linear-gradient(90deg, #fff 80%, #ffe0e0 100%);
+    border-radius: 6px;
+}
+h2 {
+    color: #b71c1c;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    border-bottom: 2px solid #e53935;
+    display: inline-block;
+    padding-bottom: 0.1em;
+}
+hr {
+    border: none;
+    border-top: 2px solid #e53935;
+    margin: 2em 0;
+}
+table.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    background: #fff7f7;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(229,57,53,0.06);
+}
+table.team-table th, table.team-table td {
+    border: 1px solid #f2bdbd;
+    padding: 0.5em 0.7em;
+    text-align: left;
+}
+table.team-table th {
+    background: #e53935;
+    color: #fff;
+    font-weight: 600;
+}
+.blog-post {
+    background: #fff6f6;
+    border-left: 6px solid #e53935;
+    margin-bottom: 2em;
+    padding: 1.5em 2em;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(229,57,53,0.04);
+}
+.blog-post h2 {
+    margin-top: 0;
+    color: #b71c1c;
+}
+.blog-post .date {
+    color: #888;
+    font-size: 0.95em;
+    margin-bottom: 0.7em;
+}
+.resources-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1.5em;
+    list-style: none;
+    margin: 1.5em 0 2em 0;
+    padding: 0;
+}
+.resource-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(60,60,60,0.07);
+    padding: 1.2em 1.2em 1em 1.2em;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1.5px solid #ffe0e0;
+}
+.resource-card a {
+    color: #e53935;
+    font-weight: 600;
+    font-size: 1.08em;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+}
+.resource-card span {
+    color: #222;
+    font-size: 0.98em;
+    margin-top: 0.2em;
+    display: block;
+}
+blockquote {
+    border-left: 5px solid #e53935;
+    background: #fff0f0;
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+    font-style: italic;
+    color: #b71c1c;
+    border-radius: 8px;
+}
+footer {
+    background: linear-gradient(90deg, #e53935 0%, #ffb300 100%);
+    border-top: none;
+    text-align: center;
+    padding: 1.2em 0 0.7em 0;
+    color: #fff;
+    font-size: 1em;
+    margin-top: 2em;
+    box-shadow: 0 -2px 8px rgba(229,57,53,0.08);
+    flex-shrink: 0;
+}
+@media (max-width: 700px) {
+    nav, main {
+        max-width: 100%;
+        padding: 0 0.5em;
+    }
+    .hero h1 {
+        font-size: 1.3em;
+    }
+    table.team-table th, table.team-table td {
+        font-size: 0.95em;
+        padding: 0.3em 0.4em;
+    }
+    .blog-post {
+        padding: 0.7em 0.5em;
+    }
+    .hero, section, .blog-post {
+        padding: 1em 0.5em 1em 0.5em;
+    }
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin: 2em 0 1em 0;
+}
+.feature {
+    background: #fff7f7;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(229,57,53,0.07);
+    padding: 1.2em 1.5em;
+    max-width: 220px;
+    text-align: center;
+    flex: 1 1 180px;
+    min-width: 160px;
+}
+.feature-icon {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+    color: #e53935;
+}
+.cta-btn {
+    display: inline-block;
+    background: #e53935;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.6em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1em;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.cta-btn:hover, .cta-btn:focus {
+    background: #b71c1c;
+    color: #fff;
+}
+.resource-desc {
+    background: #fff6f6;
+    border-left: 6px solid #e53935;
+    border-radius: 10px;
+    padding: 1.2em 1.5em;
+    margin-bottom: 2em;
+    color: #b71c1c;
+    font-size: 1.1em;
+}
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(229,57,53,0.10);
+    margin: 1em 0;
+    max-width: 100%;
+} 
